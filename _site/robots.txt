@@ -1,1 +1,1 @@
-Sitemap: https://miriamheiss.github.io/first-website/sitemap.xml
+Sitemap: https://253197d4-618d-4984-8f13-8fedb950f291.netlify.app/sitemap.xml
