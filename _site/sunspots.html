@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>First Website - Yearly Sunspots</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="site_libs/jquery-1.11.1/jquery.min.js"></script>
+<link href="site_libs/dygraphs-1.1.1/dygraph.css" rel="stylesheet">
+<script src="site_libs/dygraphs-1.1.1/dygraph-combined.js"></script>
+<script src="site_libs/dygraphs-1.1.1/shapes.js"></script>
+<script src="site_libs/moment-2.8.4/moment.js"></script>
+<script src="site_libs/moment-timezone-0.2.5/moment-timezone-with-data.js"></script>
+<script src="site_libs/moment-fquarter-1.0.0/moment-fquarter.min.js"></script>
+<script src="site_libs/dygraphs-binding-1.1.1.6/dygraphs.js"></script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">First Website</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html">Home</a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html">About</a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-sources" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sources</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-sources">    
+        <li>
+    <a class="dropdown-item" href="./source-1.html">
+ <span class="dropdown-text">Source 1</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./source-2.html">
+ <span class="dropdown-text">Source 2</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-interactive-pages" role="button" data-bs-toggle="dropdown" aria-expanded="false">Interactive Pages</a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-interactive-pages">    
+        <li>
+    <a class="dropdown-item" href="./plane-passengers.html">
+ <span class="dropdown-text">Plane Passengers</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./sunspots.html">
+ <span class="dropdown-text">Yearly Sunspots</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Yearly Sunspots</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./plane-passengers.html" class="sidebar-item-text sidebar-link">Plane Passengers</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sunspots.html" class="sidebar-item-text sidebar-link active">Yearly Sunspots</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Yearly Sunspots</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-5c0916738bd3df5e5c65" style="width:100%;height:464px;" class="dygraphs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5c0916738bd3df5e5c65">{"x":{"attrs":{"title":"Sunspots 1700-1988","labels":["year","V1"],"legend":"auto","retainDateWindow":false,"axes":{"x":{"pixelsPerLabel":60}},"showRangeSelector":true,"dateWindow":["1700-01-01T00:00:00.000Z","1988-12-31T00:00:00.000Z"],"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel"},"scale":"yearly","annotations":[],"shadings":[],"events":[],"format":"date","data":[["1700-01-01T00:00:00.000Z","1701-01-01T00:00:00.000Z","1702-01-01T00:00:00.000Z","1703-01-01T00:00:00.000Z","1704-01-01T00:00:00.000Z","1705-01-01T00:00:00.000Z","1706-01-01T00:00:00.000Z","1707-01-01T00:00:00.000Z","1708-01-01T00:00:00.000Z","1709-01-01T00:00:00.000Z","1710-01-01T00:00:00.000Z","1711-01-01T00:00:00.000Z","1712-01-01T00:00:00.000Z","1713-01-01T00:00:00.000Z","1714-01-01T00:00:00.000Z","1715-01-01T00:00:00.000Z","1716-01-01T00:00:00.000Z","1717-01-01T00:00:00.000Z","1718-01-01T00:00:00.000Z","1719-01-01T00:00:00.000Z","1720-01-01T00:00:00.000Z","1721-01-01T00:00:00.000Z","1722-01-01T00:00:00.000Z","1723-01-01T00:00:00.000Z","1724-01-01T00:00:00.000Z","1725-01-01T00:00:00.000Z","1726-01-01T00:00:00.000Z","1727-01-01T00:00:00.000Z","1728-01-01T00:00:00.000Z","1729-01-01T00:00:00.000Z","1730-01-01T00:00:00.000Z","1731-01-01T00:00:00.000Z","1732-01-01T00:00:00.000Z","1733-01-01T00:00:00.000Z","1734-01-01T00:00:00.000Z","1735-01-01T00:00:00.000Z","1736-01-01T00:00:00.000Z","1737-01-01T00:00:00.000Z","1738-01-01T00:00:00.000Z","1739-01-01T00:00:00.000Z","1740-01-01T00:00:00.000Z","1741-01-01T00:00:00.000Z","1742-01-01T00:00:00.000Z","1743-01-01T00:00:00.000Z","1744-01-01T00:00:00.000Z","1745-01-01T00:00:00.000Z","1746-01-01T00:00:00.000Z","1747-01-01T00:00:00.000Z","1748-01-01T00:00:00.000Z","1749-01-01T00:00:00.000Z","1750-01-01T00:00:00.000Z","1751-01-01T00:00:00.000Z","1752-01-01T00:00:00.000Z","1753-01-01T00:00:00.000Z","1754-01-01T00:00:00.000Z","1755-01-01T00:00:00.000Z","1756-01-01T00:00:00.000Z","1757-01-01T00:00:00.000Z","1758-01-01T00:00:00.000Z","1759-01-01T00:00:00.000Z","1760-01-01T00:00:00.000Z","1761-01-01T00:00:00.000Z","1762-01-01T00:00:00.000Z","1763-01-01T00:00:00.000Z","1764-01-01T00:00:00.000Z","1765-01-01T00:00:00.000Z","1766-01-01T00:00:00.000Z","1767-01-01T00:00:00.000Z","1768-01-01T00:00:00.000Z","1769-01-01T00:00:00.000Z","1770-01-01T00:00:00.000Z","1771-01-01T00:00:00.000Z","1772-01-01T00:00:00.000Z","1773-01-01T00:00:00.000Z","1774-01-01T00:00:00.000Z","1775-01-01T00:00:00.000Z","1776-01-01T00:00:00.000Z","1777-01-01T00:00:00.000Z","1778-01-01T00:00:00.000Z","1779-01-01T00:00:00.000Z","1780-01-01T00:00:00.000Z","1781-01-01T00:00:00.000Z","1782-01-01T00:00:00.000Z","1783-01-01T00:00:00.000Z","1784-01-01T00:00:00.000Z","1785-01-01T00:00:00.000Z","1786-01-01T00:00:00.000Z","1787-01-01T00:00:00.000Z","1788-01-01T00:00:00.000Z","1789-01-01T00:00:00.000Z","1790-01-01T00:00:00.000Z","1791-01-01T00:00:00.000Z","1792-01-01T00:00:00.000Z","1793-01-01T00:00:00.000Z","1794-01-01T00:00:00.000Z","1795-01-01T00:00:00.000Z","1796-01-01T00:00:00.000Z","1797-01-01T00:00:00.000Z","1798-01-01T00:00:00.000Z","1799-01-01T00:00:00.000Z","1800-01-01T00:00:00.000Z","1801-01-01T00:00:00.000Z","1802-01-01T00:00:00.000Z","1803-01-01T00:00:00.000Z","1804-01-01T00:00:00.000Z","1805-01-01T00:00:00.000Z","1806-01-01T00:00:00.000Z","1807-01-01T00:00:00.000Z","1808-01-01T00:00:00.000Z","1809-01-01T00:00:00.000Z","1810-01-01T00:00:00.000Z","1811-01-01T00:00:00.000Z","1812-01-01T00:00:00.000Z","1813-01-01T00:00:00.000Z","1814-01-01T00:00:00.000Z","1815-01-01T00:00:00.000Z","1816-01-01T00:00:00.000Z","1817-01-01T00:00:00.000Z","1818-01-01T00:00:00.000Z","1819-01-01T00:00:00.000Z","1820-01-01T00:00:00.000Z","1821-01-01T00:00:00.000Z","1822-01-01T00:00:00.000Z","1823-01-01T00:00:00.000Z","1824-01-01T00:00:00.000Z","1825-01-01T00:00:00.000Z","1826-01-01T00:00:00.000Z","1827-01-01T00:00:00.000Z","1828-01-01T00:00:00.000Z","1829-01-01T00:00:00.000Z","1830-01-01T00:00:00.000Z","1831-01-01T00:00:00.000Z","1832-01-01T00:00:00.000Z","1833-01-01T00:00:00.000Z","1834-01-01T00:00:00.000Z","1835-01-01T00:00:00.000Z","1836-01-01T00:00:00.000Z","1837-01-01T00:00:00.000Z","1838-01-01T00:00:00.000Z","1839-01-01T00:00:00.000Z","1840-01-01T00:00:00.000Z","1841-01-01T00:00:00.000Z","1842-01-01T00:00:00.000Z","1843-01-01T00:00:00.000Z","1844-01-01T00:00:00.000Z","1845-01-01T00:00:00.000Z","1846-01-01T00:00:00.000Z","1847-01-01T00:00:00.000Z","1848-01-01T00:00:00.000Z","1849-01-01T00:00:00.000Z","1850-01-01T00:00:00.000Z","1851-01-01T00:00:00.000Z","1852-01-01T00:00:00.000Z","1853-01-01T00:00:00.000Z","1854-01-01T00:00:00.000Z","1855-01-01T00:00:00.000Z","1856-01-01T00:00:00.000Z","1857-01-01T00:00:00.000Z","1858-01-01T00:00:00.000Z","1859-01-01T00:00:00.000Z","1860-01-01T00:00:00.000Z","1861-01-01T00:00:00.000Z","1862-01-01T00:00:00.000Z","1863-01-01T00:00:00.000Z","1864-01-01T00:00:00.000Z","1865-01-01T00:00:00.000Z","1866-01-01T00:00:00.000Z","1867-01-01T00:00:00.000Z","1868-01-01T00:00:00.000Z","1869-01-01T00:00:00.000Z","1870-01-01T00:00:00.000Z","1871-01-01T00:00:00.000Z","1872-01-01T00:00:00.000Z","1873-01-01T00:00:00.000Z","1874-01-01T00:00:00.000Z","1875-01-01T00:00:00.000Z","1876-01-01T00:00:00.000Z","1877-01-01T00:00:00.000Z","1878-01-01T00:00:00.000Z","1879-01-01T00:00:00.000Z","1880-01-01T00:00:00.000Z","1881-01-01T00:00:00.000Z","1882-01-01T00:00:00.000Z","1883-01-01T00:00:00.000Z","1884-01-01T00:00:00.000Z","1885-01-01T00:00:00.000Z","1886-01-01T00:00:00.000Z","1887-01-01T00:00:00.000Z","1888-01-01T00:00:00.000Z","1889-01-01T00:00:00.000Z","1890-01-01T00:00:00.000Z","1891-01-01T00:00:00.000Z","1892-01-01T00:00:00.000Z","1893-01-01T00:00:00.000Z","1894-01-01T00:00:00.000Z","1895-01-01T00:00:00.000Z","1896-01-01T00:00:00.000Z","1897-01-01T00:00:00.000Z","1898-01-01T00:00:00.000Z","1899-01-01T00:00:00.000Z","1900-01-01T00:00:00.000Z","1901-01-01T00:00:00.000Z","1902-01-01T00:00:00.000Z","1903-01-01T00:00:00.000Z","1904-01-01T00:00:00.000Z","1905-01-01T00:00:00.000Z","1906-01-01T00:00:00.000Z","1907-01-01T00:00:00.000Z","1908-01-01T00:00:00.000Z","1909-01-01T00:00:00.000Z","1910-01-01T00:00:00.000Z","1911-01-01T00:00:00.000Z","1912-01-01T00:00:00.000Z","1913-01-01T00:00:00.000Z","1914-01-01T00:00:00.000Z","1915-01-01T00:00:00.000Z","1916-01-01T00:00:00.000Z","1917-01-01T00:00:00.000Z","1918-01-01T00:00:00.000Z","1919-01-01T00:00:00.000Z","1920-01-01T00:00:00.000Z","1921-01-01T00:00:00.000Z","1922-01-01T00:00:00.000Z","1923-01-01T00:00:00.000Z","1924-01-01T00:00:00.000Z","1925-01-01T00:00:00.000Z","1926-01-01T00:00:00.000Z","1927-01-01T00:00:00.000Z","1928-01-01T00:00:00.000Z","1929-01-01T00:00:00.000Z","1930-01-01T00:00:00.000Z","1931-01-01T00:00:00.000Z","1932-01-01T00:00:00.000Z","1933-01-01T00:00:00.000Z","1934-01-01T00:00:00.000Z","1935-01-01T00:00:00.000Z","1936-01-01T00:00:00.000Z","1937-01-01T00:00:00.000Z","1938-01-01T00:00:00.000Z","1939-01-01T00:00:00.000Z","1940-01-01T00:00:00.000Z","1941-01-01T00:00:00.000Z","1942-01-01T00:00:00.000Z","1943-01-01T00:00:00.000Z","1944-01-01T00:00:00.000Z","1945-01-01T00:00:00.000Z","1946-01-01T00:00:00.000Z","1947-01-01T00:00:00.000Z","1948-01-01T00:00:00.000Z","1949-01-01T00:00:00.000Z","1950-01-01T00:00:00.000Z","1951-01-01T00:00:00.000Z","1952-01-01T00:00:00.000Z","1953-01-01T00:00:00.000Z","1954-01-01T00:00:00.000Z","1955-01-01T00:00:00.000Z","1956-01-01T00:00:00.000Z","1957-01-01T00:00:00.000Z","1958-01-01T00:00:00.000Z","1959-01-01T00:00:00.000Z","1960-01-01T00:00:00.000Z","1961-01-01T00:00:00.000Z","1962-01-01T00:00:00.000Z","1963-01-01T00:00:00.000Z","1964-01-01T00:00:00.000Z","1965-01-01T00:00:00.000Z","1966-01-01T00:00:00.000Z","1967-01-01T00:00:00.000Z","1968-01-01T00:00:00.000Z","1969-01-01T00:00:00.000Z","1970-01-01T00:00:00.000Z","1971-01-01T00:00:00.000Z","1972-01-01T00:00:00.000Z","1973-01-01T00:00:00.000Z","1974-01-01T00:00:00.000Z","1975-01-01T00:00:00.000Z","1976-01-01T00:00:00.000Z","1977-01-01T00:00:00.000Z","1978-01-01T00:00:00.000Z","1979-01-01T00:00:00.000Z","1980-01-01T00:00:00.000Z","1981-01-01T00:00:00.000Z","1982-01-01T00:00:00.000Z","1983-01-01T00:00:00.000Z","1984-01-01T00:00:00.000Z","1985-01-01T00:00:00.000Z","1986-01-01T00:00:00.000Z","1987-01-01T00:00:00.000Z","1988-01-01T00:00:00.000Z"],[5,11,16,23,36,58,29,20,10,8,3,0,0,2,11,27,47,63,60,39,28,26,22,11,21,40,78,122,103,73,47,35,11,5,16,34,70,81,111,101,73,40,20,16,5,11,22,40,60,80.9,83.4,47.7,47.8,30.7,12.2,9.6,10.2,32.4,47.6,54,62.9,85.9,61.2,45.1,36.4,20.9,11.4,37.8,69.8,106.1,100.8,81.6,66.5,34.8,30.6,7,19.8,92.5,154.4,125.9,84.8,68.1,38.5,22.8,10.2,24.1,82.9,132,130.9,118.1,89.9,66.6,60,46.9,41,21.3,16,6.4,4.1,6.8,14.5,34,45,43.1,47.5,42.2,28.1,10.1,8.1,2.5,0,1.4,5,12.2,13.9,35.4,45.8,41.1,30.1,23.9,15.6,6.6,4,1.8,8.5,16.6,36.3,49.6,64.2,67,70.9,47.8,27.5,8.5,13.2,56.9,121.5,138.3,103.2,85.7,64.6,36.7,24.2,10.7,15,40.1,61.5,98.5,124.7,96.3,66.6,64.5,54.1,39,20.6,6.7,4.3,22.7,54.8,93.8,95.8,77.2,59.1,44,47,30.5,16.3,7.3,37.6,74,139,111.2,101.6,66.2,44.7,17,11.3,12.4,3.4,6,32.3,54.3,59.7,63.7,63.5,52.2,25.4,13.1,6.8,6.3,7.1,35.6,73,85.1,78,64,41.8,26.2,26.7,12.1,9.5,2.7,5,24.4,42,63.5,53.8,62,48.5,43.9,18.6,5.7,3.6,1.4,9.6,47.4,57.1,103.9,80.6,63.6,37.6,26.1,14.2,5.8,16.7,44.3,63.9,69,77.8,64.9,35.7,21.2,11.1,5.7,8.7,36.1,79.7,114.4,109.6,88.8,67.8,47.5,30.6,16.3,9.6,33.2,92.6,151.6,136.3,134.7,83.9,69.4,31.5,13.9,4.4,38,141.7,190.2,184.8,159,112.3,53.9,37.5,27.9,10.2,15.1,47,93.8,105.9,105.5,104.5,66.6,68.9,38,34.5,15.5,12.6,27.5,92.5,155.4,154.7,140.5,115.9,66.6,45.9,17.9,13.4,29.2,100.2]]},"evals":["attrs.interactionModel"],"jsHooks":[]}</script>
+</div>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

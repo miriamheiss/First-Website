@@ -19,5 +19,19 @@
     "title": "About",
     "section": "About the Project",
     "text": "About the Project\nasdgjhliughlsg\n\nGoals\n\nSGkjhad\napsdgh\napsiughe\n\n“This is data science”\n~Preceptor"
+  },
+  {
+    "objectID": "interactive-page.html",
+    "href": "interactive-page.html",
+    "title": "First Website",
+    "section": "",
+    "text": "library(dygraphs)\ndygraph(AirPassengers, main = \"Plane Passengers 1950-1960\") %>% \n  dyRangeSelector(dateWindow = c(\"1950-01-01\", \"1960-01-01\"))"
+  },
+  {
+    "objectID": "data-passengers.html",
+    "href": "data-passengers.html",
+    "title": "Data for Plane Passengers",
+    "section": "",
+    "text": "library(dygraphs)\ndygraph(sunspot.year, main = \"Sunspots 1700-1988\") %>% \n  dyRangeSelector(dateWindow = c(\"1700-01-01\", \"1988-12-31\"))"
   }
 ]

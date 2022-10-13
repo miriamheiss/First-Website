@@ -10,19 +10,26 @@ website:
       - href: about.qmd
         text: About
       - sidebar:sources
+      - sidebar:interactive
         
   sidebar:
     - id: sources
       title: "Sources"
-      style: "docked"
+      style: "floating"
       background: "#ffffff"
       collapse-level: 2
       contents: 
         - source-1.qmd
         - source-2.qmd
         
-    - title: "Empty space lol"
-    
+    - id: interactive
+      title: "Interactive Pages"
+      style: "floating"
+      background: "#ffffff"
+      collapse-level: 2
+      contents: 
+        - plane-passengers.qmd
+        - sunspots.qmd
 format:
   html:
     theme: cosmo
