@@ -1,0 +1,15 @@
+---
+title: "plotly"
+---
+
+```{r}
+library(tidyverse)
+library(plotly)
+fun_thing <- ggplot(data = mtcars, mapping = aes(y = hp,
+              x = mpg)) + 
+  geom_col(position = "dodge2", color = "violetred",)
+
+ggplotly(fun_thing)
+```
+
+Description of plot

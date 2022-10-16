@@ -29,7 +29,7 @@ website:
       collapse-level: 2
       contents: 
         - plane-passengers.qmd
-        - sunspots.qmd
+        - maps.qmd
 format:
   html:
     theme: cosmo
