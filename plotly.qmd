@@ -1,15 +1,18 @@
 ---
-title: "plotly"
+title: "Cars"
 ---
 
-```{r}
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
 library(tidyverse)
 library(plotly)
 fun_thing <- ggplot(data = mtcars, mapping = aes(y = hp,
-              x = mpg)) + 
-  geom_col(position = "dodge2", color = "violetred",)
+              x = mpg,
+              text = mpg)) + 
+  geom_point(color = "violetred",)+
+  labs(x = "Miles per Gallon",
+       y = "Horse power")
 
-ggplotly(fun_thing)
+ggplotly(fun_thing, tooltip = "text")
 ```
 
 Description of plot

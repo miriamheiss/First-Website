@@ -26,10 +26,11 @@ website:
       title: "Interactive Pages"
       style: "floating"
       background: "#ffffff"
-      collapse-level: 2
+      collapse-level: 3
       contents: 
         - plane-passengers.qmd
         - maps.qmd
+        - plotly.qmd
 format:
   html:
     theme: cosmo
