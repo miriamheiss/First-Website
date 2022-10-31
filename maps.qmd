@@ -4,7 +4,7 @@ title: "Maps"
 
 ```{r, echo = FALSE}
 library(leaflet)
-leaflet() %>% setView(lat = 51.4993049126079, lng =  -0.1280930742375878, zoom = 12) %>% addTiles() 
+leaflet() |> setView(lat = 51.4993, lng =  -0.1280, zoom = 12) |> addTiles() 
 ```
 
 Description of map. Very nice. 
