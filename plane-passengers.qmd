@@ -5,7 +5,9 @@ title: "Plane Passengers"
 ```{r, echo = FALSE}
 library(dygraphs)
 dygraph(AirPassengers, main = "Plane Passengers 1950-1960") |> 
-  dyRangeSelector(dateWindow = c("1950-01-01", "1960-12-31"))
+  dyRangeSelector(dateWindow = c("1950-01-01", "1960-12-31")) 
+
+#The data is a built in dataset
 ```
 
 Nice description of the plot. Very in depth.
