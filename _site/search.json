@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "plotly.html",
+    "href": "plotly.html",
+    "title": "Cars",
+    "section": "",
+    "text": "Description of plot"
+  },
+  {
+    "objectID": "plane-passengers.html",
+    "href": "plane-passengers.html",
+    "title": "Plane Passengers",
+    "section": "",
+    "text": "Nice description of the plot. Very in depth."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "first-website",
@@ -21,31 +35,10 @@
     "text": "About the Project\nasdgjhliughlsg\n\nGoals\n\nSGkjhad\napsdgh\napsiughe\n\n“This is data science”\n~Preceptor"
   },
   {
-    "objectID": "plane-passengers.html",
-    "href": "plane-passengers.html",
-    "title": "Plane Passengers",
-    "section": "",
-    "text": "Nice description of the plot. Very in depth."
-  },
-  {
-    "objectID": "oregon.html",
-    "href": "oregon.html",
-    "title": "Yearly Sunspots",
-    "section": "",
-    "text": "library(leaflet)\nleaflet() %>% setView(lat = 51.4993049126079, lng =  -0.1280930742375878, zoom = 12) %>% addTiles()"
-  },
-  {
-    "objectID": "maps.html",
-    "href": "maps.html",
+    "objectID": "map-london.html",
+    "href": "map-london.html",
     "title": "Maps",
     "section": "",
     "text": "Description of map. Very nice."
-  },
-  {
-    "objectID": "plotly.html",
-    "href": "plotly.html",
-    "title": "Cars",
-    "section": "",
-    "text": "Description of plot"
   }
 ]
