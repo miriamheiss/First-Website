@@ -5,12 +5,14 @@ title: "Cars"
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
 library(tidyverse)
 library(plotly)
-fun_thing <- ggplot(data = mtcars, mapping = aes(y = hp,
-              x = mpg,
-              text = mpg)) + 
-  geom_point(color = "violetred",)+
-  labs(x = "Miles per Gallon",
-       y = "Horse power")
+fun_thing <- ggplot(data = ChickWeight, 
+                    mapping = aes(x = weight,
+                                  y = Diet,
+                                  text = weight)) + 
+  geom_point(color = "black", alpha = 0.5) +
+  labs(title = "Diet and Weight of Chicks",
+       x = "Weight of Chick (in grams)",
+       y = "Diet")
 
 ggplotly(fun_thing, tooltip = "text")
 ```
