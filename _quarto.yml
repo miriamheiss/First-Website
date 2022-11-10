@@ -22,6 +22,8 @@ website:
         - source-1.qmd
         - source-2.qmd
         
+        
+        
     - id: interactive
       title: "Interactive Pages"
       style: "floating"
@@ -31,9 +33,10 @@ website:
         - plane-passengers.qmd
         - map-london.qmd
         - plotly.qmd
+        
 format:
   html:
-    theme: yeti
+    theme: cosmo
     css: styles.css
     toc: true
 

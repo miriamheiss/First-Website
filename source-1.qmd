@@ -1,3 +1,29 @@
 ---
 title: "Source 1"
+bibliography: bib/references.bib
+csl: bib/apa.csl
 ---
+
+There is a book by Jane Austen that is neat and it is about stuff [@austen1817].
+
+@lovelace1842 says that computers are new.
+
+[@lovelace1842]
+
+```bib
+@article{lovelace1842,
+	author = {Augusta Ada Lovelace},
+	journal = {Taylor's Scientific Memoirs},
+	pages = {666--731},
+	title = {Sketch of the Analytical Engine Invented by {Charles Babbage}, by {LF Menabrea}, Officer of the Military Engineers, with Notes Upon the Memoir by the Translator},
+	volume = {3},
+	year = {1842}}
+
+@book{austen1817,
+	address = {London},
+	author = {Jane Austen},
+	publisher = {John Murray},
+	title = {Persuasion},
+	year = {1817}}
+
+```
