@@ -1,3 +1,5 @@
 ---
 title: "Source 2"
+bibliography: bib/references.bib
 ---
+ @Turing:1936 says math is cool.
